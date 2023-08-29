@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+body {
+  background: black;
+  overflow-x: hidden;
+  width:100%;
+  height: 100vh;
+  font-family: Arial;
+}
+
+.page1 {
+  height: 100vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #f8f83a;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.page1 .heading {
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.page1 h1 {
+  font-family: Ubuntu;
+  margin-top: -100px;
+  color: #008000;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+.page1 .enterprises {
+  font-family: Ubuntu;
+  font-size: 30px;
+  color: black;
+  margin-left: 5px;
+  letter-spacing: 10.5px;
+}
+
+.logo {
+  z-index: 0;
+  height: 754px;
+  width: 800px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 95vh;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f83a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008000;
+  border-radius: 2px;
+}
+
+.insta-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50px;
+  left: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.insta-icon:hover {
+  height: 27px;
+  width: 27px;
+}
+
+.insta-icon:active {
+  opacity: 0.5;
+}
+
+.facebook-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 100px;
+  left: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.facebook-icon:hover {
+  height: 27px;
+  width: 27px;
+}
+
+.facebook-icon:active {
+  opacity: 0.7;
+}
+
+.naakwa-description {
+  text-align: justify;
+  width: 400px;
+  font-family: Roboto Mono;
+  margin-left: 100px;
+  font-size: 18px;
+  margin-bottom: -100px;
+  margin-top: 25px;
+}
+
+.menu-div {
+  position: absolute;
+  right: 50px;
+  z-index: 2;
+  top: 50px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu-img {
+  height: 25px;
+  cursor: pointer;
+  width: 25px;
+}
+
+.menu-div:hover {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+}
+
+.menu-div:active {
+  opacity: 0.3;
+  .menu-img {
+    opacity: 0;
+    
+  }
+}
+
+/*mobile responsive page 1*/
+@media (max-width: 768px) {
+  .page1 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .logo:active {
+    opacity: 0.7;
+  }
+
+  .heading h1 {
+    position: absolute;
+    left: 240px;
+    font-size: 60px;
+  }
+
+  .heading .enterprises {
+    position: absolute;
+    font-size: 30px;
+    top: 310px;
+    left: 235px;
+  }
+
+  .heading .naakwa-description {
+    position: absolute;
+    left: 90px;
+    top: 320px;
+    text-align: center;
+  }
+
+  .menu-div {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .menu-img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .menu-div:active,
+  .menu-img:active {
+    display: none;
+  }
+
+  .insta-icon {
+    position: absolute;
+    top: 460px;
+    left: 340px;
+  }
+
+  .facebook-icon {
+    position: absolute;
+    top: 460px;
+    left: 410px;
+  }
+}
+
+/*page 2*/
+
+.page2 {
+  height: 400vh;
+  width: 100%;
+  background: #f8f83a;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto Mono;
+  letter-spacing: 2px;
+}
+
+.heading1 {
+  margin-top: 50px;
+  margin-left: 25px;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 80%;
+  height: 180px;
+  margin-left: 150px;
+  background: #008000;
+}
+
+.heading1 h1 {
+  margin-left: 55px;
+  margin-top: 45px;
+}
+
+.heading1 P {
+  margin-top: 5px;
+  margin-left: 55px;
+  font-size: 22px;
+  width: 1000px;
+}
+
+.heading1 img {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 40px;
+  top: 0;
+}
+
+.heading2 {
+  margin-top: 50px;
+  margin-left: 25px;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 80%;
+  height: 210px;
+  margin-left: 150px;
+  background: #008000;
+}
+
+.heading2 h1 {
+  margin-left: 190px;
+  margin-top: 45px;
+}
+
+.heading2 P {
+  margin-top: 5px;
+  margin-left: 190px;
+  font-size: 22px;
+  width: 1000px;
+}
+
+.heading2 img {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  left: 0;
+  margin-top: 30px;
+  margin-left: 40px;
+  top: 0;
+}
+
+.heading3 {
+  margin-top: 50px;
+  margin-left: 25px;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 80%;
+  height: 205px;
+  margin-left: 150px;
+  background: #008000;
+}
+
+.heading3 h1 {
+  margin-left: 55px;
+  margin-top: 45px;
+}
+
+.heading3 P {
+  margin-top: 5px;
+  margin-left: 55px;
+  font-size: 22px;
+  width: 1000px;
+}
+
+.heading3 img {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  right: 0;
+  margin-top: 45px;
+  margin-right: 40px;
+  top: 0;
+}
+
+.gallery-div {
+  margin-top: 100px;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 150vh;
+  width: 1400px;
+  margin-left: 70px;
+}
+
+.gallery-div h1 {
+  position: absolute;
+  top: 0;
+  left: 505px;
+  margin-top: 50px;
+  font-family: Roboto Mono;
+}
+
+.image-gallery {
+  height: 200vh;
+  display: flex;
+  top: 150px;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  position: absolute;
+  width: 100%;
+}
+
+.image-gallery img {
+  height: 270px;
+  width: 450px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.image-gallery img:hover {
+  opacity: 0.7;
+}
+
+/*mobile responsive page 2*/
+@media (max-width: 768px) {
+  .page2 {
+    position: relative;
+    height: 500vh;
+  }
+
+  .heading1 {
+    position: absolute;
+    left: -117px;
+    width: 700px;
+    height: 355px;
+  }
+
+  .heading1 h1 {
+    margin-top: 180px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .heading1 p {
+    margin-left: 5px;
+    width: 700px;
+    text-align: center;
+  }
+
+  .heading1 img {
+    top: 0;
+    left: 280px;
+  }
+
+  .heading2 {
+    position: absolute;
+    left: -117px;
+    top: 450px;
+    width: 700px;
+    height: 370px;
+  }
+
+  .heading2 h1 {
+    margin-top: 180px;
+    margin-left: 140px;
+  }
+
+  .heading2 p {
+    width: 640px;
+    margin-left: 28px;
+    text-align: center;
+  }
+
+  .heading2 img {
+    top: 0;
+    left: 250px;
+  }
+
+  .heading3 {
+    position: absolute;
+    top: 870px;
+    left: -117px;
+    width: 700px;
+    height: 360px;
+  }
+
+  .heading3 h1 {
+    margin-top: 180px;
+    margin-left: 170px;
+  }
+
+  .heading3 p {
+    width: 640px;
+    margin-left: 28px;
+    text-align: center;
+  }
+
+  .heading3 img {
+    top: -10px;
+    left: 300px;
+  }
+
+  .gallery-div {
+    margin-top: 1300px;
+  }
+
+  .gallery-div h1 {
+    margin-left: -423px;
+  }
+
+  .image-gallery {
+    position: absolute;
+    left: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+  }
+
+  .image-gallery img {
+    width: 336px;
+    height: 200px;
+  }
+}
